@@ -1,0 +1,10 @@
+<div>
+  <label>name:</label><input type="text" #dataInput />
+  <button type="button" (click)="search(dataInput.value)">ค้นหา</button>
+</div>
+
+<div *ngIf="item.length > 0">
+  <div *ngFor="let lists of item">
+    <span>{{ lists.name }}</span>
+  </div>
+</div>
